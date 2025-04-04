@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            
+
+            while (true)
+            {
+                DateTime current = DateTime.Now;
+                DateTime target = new DateTime(2025, 4, 4, 15, 15, 00);
+                TimeSpan difference = target - current;
+                Console.Clear();
+                Console.WriteLine(difference);
+                Thread.Sleep(1000);
+                
+            }
         }
     }
 }
